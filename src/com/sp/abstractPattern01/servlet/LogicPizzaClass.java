@@ -8,7 +8,6 @@ public class LogicPizzaClass extends LogicClass implements ReturnType {
   
   public LogicPizzaClass() {
     super();
-    settingReturnType();
   }
 
   @Override
@@ -18,10 +17,5 @@ public class LogicPizzaClass extends LogicClass implements ReturnType {
       ps.orderPizza((String) o);
 
   }
-
-  @Override
-  public Object settingReturnType() {
-    // TODO Auto-generated method stub
-    return new String();
-  }
+  
 }

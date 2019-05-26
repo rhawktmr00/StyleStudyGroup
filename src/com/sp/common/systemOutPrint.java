@@ -1,10 +1,20 @@
 package com.sp.common;
 
-public class systemOutPrint extends SystemOut {
+public class systemOutPrint extends SystemOut{
+  
+    public systemOutPrint(String s) {
+        // TODO Auto-generated constructor stub
+        print(s);
+    }
 
-  public systemOutPrint(String s) {
+    public systemOutPrint(float s) {
+        // TODO Auto-generated constructor stub
+        String ss = String.valueOf(s);
+        print(ss);
+    }
 
-    print(s);
-  }
-
+    public systemOutPrint(int s) {
+      String ss = String.valueOf(s);
+      print(ss);
+    }
 }
