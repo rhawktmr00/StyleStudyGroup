@@ -34,12 +34,14 @@ public class WeatherBroadCastEx01 extends HttpServlet {
       String hunuduty = request.getParameter("hunuduty");
       String pressure = request.getParameter("pressure");
       String tommorwWeather = request.getParameter("tommowWeather");
+      String[] broadCasting = request.getParameterValues("broadCasting");
+      
       float tempatureF = Float.parseFloat(tempature);
       float hunudutyF = Float.parseFloat(hunuduty);
       float pressureF = Float.parseFloat(pressure);
       WeatherData weatherData = new WeatherData();
       weatherData.setAllDatas(tempatureF, hunudutyF, pressureF, tommorwWeather);
-      
+      weatherData.setBroadCasting(broadCasting);
       LogicClass logicClass = new LogicWeatherClass();
       
       String printValue = logicClass.excute(weatherData);

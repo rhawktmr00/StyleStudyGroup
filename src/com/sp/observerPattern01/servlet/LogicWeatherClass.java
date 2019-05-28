@@ -15,12 +15,21 @@ public class LogicWeatherClass extends LogicClass{
   public void run(Object o) {
 
     Member broadcastMember = new BroadCastMember();
-    broadcastMember.addBroadcast(new MBC());
-    broadcastMember.addBroadcast(new KBS());
-    Broadcast sbs = new SBS();
-    broadcastMember.addBroadcast(sbs);
     
     WeatherData data = (WeatherData) o;
+    
+    String[] broadCasting = data.getBroadCasting();
+    
+    for (String bc : broadCasting) {
+      if(bc.equals("KBS")) {
+        broadcastMember.addBroadcast(new KBS());
+      }else if(bc.equals("MBC")) {
+        broadcastMember.addBroadcast(new MBC());
+      }else if(bc.equals("SBS")) {
+        Broadcast sbs = new SBS();
+        broadcastMember.addBroadcast(sbs);
+      }
+    }
     
     broadcastMember.notifyBroadcast(data);
   }

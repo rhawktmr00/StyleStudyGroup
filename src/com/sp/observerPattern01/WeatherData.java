@@ -13,7 +13,15 @@ public class WeatherData implements ReturnType{
   private float pressure;
   // 내일 예정날씨
   private String tommorwWeather;
-
+  
+  private String[] broadCasting; 
+  
+  public String[] getBroadCasting() {
+    return broadCasting;
+  }
+  public void setBroadCasting(String[] broadCasting) {
+    this.broadCasting = broadCasting;
+  }
   public void setAllDatas(float tempature, float hunuduty, float pressure, String tommorwWeather) {
       this.tempature = tempature;
       this.hunuduty = hunuduty;

@@ -14,8 +14,25 @@
 		<br> <label>pressure: </label> <input type="text" name="pressure" />
 		<br> <label>tempature: </label> <input type="text"
 			name="tempature" /> <br> <label>hunuduty: </label> <input
-			type="text" name="hunuduty" /> <br> <input type="submit"
+			type="text" name="hunuduty" /> 
+		<br> 
+		<button id="addBroadCasting" type="button">add BroadCasting</button>
+		<div class="addBroadCasting"></div>
+		
+		<br> <input type="submit"
 			value="send">
 	</form>
+	
+	
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#addBroadCasting").click(function() {
+			var list = "<label>BroadCasting: </label><select name='broadCasting'><option value='KBS'>KBS</option><option value='MBC'>MBC</option><option value='SBS'>SBS</option></select>";
+			$(".addBroadCasting").append(list);
+		});
+
+	});
+</script>
 </html>
