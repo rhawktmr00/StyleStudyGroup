@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.sp.common.LogicClass;
-import com.sp.observerPattern01.LogicWeatherClass;
 import com.sp.observerPattern01.WeatherData;
 
 /**

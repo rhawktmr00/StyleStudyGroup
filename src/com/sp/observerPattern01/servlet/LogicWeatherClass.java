@@ -1,8 +1,15 @@
-package com.sp.observerPattern01;
+package com.sp.observerPattern01.servlet;
 
 import com.sp.common.LogicClass;
+import com.sp.observerPattern01.BroadCastMember;
+import com.sp.observerPattern01.Broadcast;
+import com.sp.observerPattern01.KBS;
+import com.sp.observerPattern01.MBC;
+import com.sp.observerPattern01.Member;
+import com.sp.observerPattern01.SBS;
+import com.sp.observerPattern01.WeatherData;
 
-public class LogicWeatherClass extends LogicClass {
+public class LogicWeatherClass extends LogicClass{
 
   @Override
   public void run(Object o) {

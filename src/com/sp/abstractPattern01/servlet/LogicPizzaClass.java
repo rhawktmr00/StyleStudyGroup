@@ -2,9 +2,8 @@ package com.sp.abstractPattern01.servlet;
 
 import com.sp.abstractPattern01.PizzaStore;
 import com.sp.common.LogicClass;
-import com.sp.common.ReturnType;
 
-public class LogicPizzaClass extends LogicClass implements ReturnType {
+public class LogicPizzaClass extends LogicClass{
   
   public LogicPizzaClass() {
     super();
