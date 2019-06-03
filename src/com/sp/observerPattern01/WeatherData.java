@@ -19,9 +19,11 @@ public class WeatherData implements ReturnType{
   public String[] getBroadCasting() {
     return broadCasting;
   }
+  
   public void setBroadCasting(String[] broadCasting) {
     this.broadCasting = broadCasting;
   }
+  
   public void setAllDatas(float tempature, float hunuduty, float pressure, String tommorwWeather) {
       this.tempature = tempature;
       this.hunuduty = hunuduty;

@@ -4,14 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>LottoEx</title>
+<title>LottoEX</title>
 </head>
 <body>
-	<h1>LottoEx</h1>
+	<h1>LottoEX</h1>
 	<hr>
-	<form action="LottoExServlet01" method="post">
-		<br><br>
+	<form action="LottoServlet01" method="post">
+
 		<input type="submit" value="send">
-	</form>	
+	</form>
+	
 </body>
 </html>
