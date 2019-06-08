@@ -14,7 +14,6 @@ public class LogicStarbuckClass extends LogicClass {
   @Override
   public void run(Object o) {
     // TODO Auto-generated method stub
-    
     new StarbuckStore().orderCoffee((OrderDatas) o);
     
   }
