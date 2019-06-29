@@ -13,7 +13,7 @@ import com.sp.common.LogicClass;
 /**
  * Servlet implementation class LottoServlet01
  */
-@WebServlet("/LottoServlet01")
+@WebServlet("/LottoServlet01ms")
 public class LottoServlet01 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -27,7 +27,7 @@ public class LottoServlet01 extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-	    request.getRequestDispatcher("Lotto/LottoEX.jsp").forward(request, response);
+	    request.getRequestDispatcher("lotto/lottoEx.jsp").forward(request, response);
 
 	}
 

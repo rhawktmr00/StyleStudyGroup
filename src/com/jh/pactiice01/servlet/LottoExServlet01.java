@@ -13,7 +13,7 @@ import com.sp.common.LogicClass;
 /**
  * Servlet implementation class LottoExServlet01
  */
-@WebServlet("/LottoExServlet01")
+@WebServlet("/LottoExServlet01jh")
 public class LottoExServlet01 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
